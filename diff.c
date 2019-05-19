@@ -59,7 +59,6 @@ int para_cmp(para* p, para* q){
 
 void para_print(para* p, para* q, int func) {
   if(!print){changed = 1; return;}
-  int similar = (para_cmp(p, q) == 2) ? 1 : 0;
   if (p == NULL || q == NULL) { return; }
   if(normal && !consecutive){
   switch (func){
